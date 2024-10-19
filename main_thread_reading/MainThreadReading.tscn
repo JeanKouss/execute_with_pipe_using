@@ -1,0 +1,53 @@
+[gd_scene load_steps=5 format=3 uid="uid://buri58md2j0yd"]
+
+[ext_resource type="Script" path="res://main_thread_reading/MainThreadReading.gd" id="1_lpb45"]
+[ext_resource type="Texture2D" uid="uid://vk8hbuvaqpr0" path="res://icon.svg" id="2_u06c5"]
+[ext_resource type="Script" path="res://main_thread_reading/TextureRect.gd" id="3_tdcd1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_yaw61"]
+font_size = 25
+
+[node name="MainThreadReading" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lpb45")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -153.0
+offset_top = -153.0
+offset_right = 153.0
+offset_bottom = 153.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_u06c5")
+script = ExtResource("3_tdcd1")
+
+[node name="Timer" type="Timer" parent="TextureRect"]
+autostart = true
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -470.0
+offset_top = -140.0
+offset_right = 470.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "Press space bar"
+label_settings = SubResource("LabelSettings_yaw61")
+horizontal_alignment = 1
+vertical_alignment = 1
