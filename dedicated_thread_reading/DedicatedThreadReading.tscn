@@ -1,20 +1,20 @@
-[gd_scene load_steps=5 format=3 uid="uid://buri58md2j0yd"]
+[gd_scene load_steps=5 format=3 uid="uid://di0wgrk5fihdn"]
 
-[ext_resource type="Script" path="res://main_thread_reading/MainThreadReading.gd" id="1_lpb45"]
-[ext_resource type="Texture2D" uid="uid://vk8hbuvaqpr0" path="res://icon.svg" id="2_u06c5"]
-[ext_resource type="Script" path="res://HeartBeat.gd" id="3_fskm1"]
+[ext_resource type="Script" path="res://dedicated_thread_reading/DedicatedThreadReading.gd" id="1_tjgwn"]
+[ext_resource type="Texture2D" uid="uid://vk8hbuvaqpr0" path="res://icon.svg" id="2_js07t"]
+[ext_resource type="Script" path="res://HeartBeat.gd" id="3_mufph"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_yaw61"]
 font_size = 25
 
-[node name="MainThreadReading" type="Control"]
+[node name="DedicatedThreadReading" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_lpb45")
+script = ExtResource("1_tjgwn")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1
@@ -29,8 +29,8 @@ offset_right = 153.0
 offset_bottom = 153.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_u06c5")
-script = ExtResource("3_fskm1")
+texture = ExtResource("2_js07t")
+script = ExtResource("3_mufph")
 
 [node name="Timer" type="Timer" parent="TextureRect"]
 autostart = true

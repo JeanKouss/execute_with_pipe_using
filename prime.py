@@ -15,10 +15,10 @@ def get_n_primes(end):
     return n_primes
 
 i = 1000
-while i <= 1000000 :
+while i <= 100000000 :
     print('Looking for the number of primes between 1 and', i)
     n = get_n_primes(i)
     print('Ouf! Found', n, 'prime numbers')
-    i +=1000
+    i *=100
     print('-------------------------------------------------')
 
