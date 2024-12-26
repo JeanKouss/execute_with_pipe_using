@@ -9,5 +9,5 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta: float) -> void:
-	modulate = Color(1., 1., 1., timer.time_left)
+	modulate = Color(1., 1., 1., sin(timer.time_left*PI*2))
 	pass

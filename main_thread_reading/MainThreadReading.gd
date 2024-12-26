@@ -9,4 +9,5 @@ func _ready():
 
 
 func _process(_delta: float) -> void:
-	print(process_io.get_line())
+	if process_io.is_open() and process_io.get_error() == OK :
+		print(process_io.get_line())

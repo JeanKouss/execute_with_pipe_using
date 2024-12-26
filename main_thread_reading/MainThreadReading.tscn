@@ -30,4 +30,5 @@ texture = ExtResource("2_u06c5")
 script = ExtResource("3_fskm1")
 
 [node name="Timer" type="Timer" parent="TextureRect"]
+wait_time = 2.0
 autostart = true
